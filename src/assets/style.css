@@ -29,7 +29,7 @@ a {
     align-items: center;
     padding: 10px 20px;
     width: 100%;
-    position: fixed;
+    position: static;
 }
 
 .main-header:hover {
@@ -49,15 +49,20 @@ a {
     gap: 10px;
 }
 
-.left-presentation {
-    width: 50%;
+#left-presentation {
+    display : flex;
+    justify-content : center;
+    width: 75%;
     height: 100vh;
-    background: url('../assets/BackgroundImage.png') no-repeat center center/cover;
+    background: url('BalatroGameScreen.jpg');
+    background-size : auto 70%;
+    background-repeat: no-repeat;
+    background-position: center;
     float: left;
 }
 
-.right-presentation {
-    width: 50%;
+#right-presentation {
+    width: 25%;
     height: 100vh;
     float: right;
     display: flex;
@@ -67,13 +72,34 @@ a {
     font-size: large;
 }
 
-.main-footer {
+#main-footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding: 10px 20px;
     width: 100%;
-    position : fixed;
+    position : static;
     bottom: 0;
 }
 
+#about-section {
+    clear: both;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#reviews-section {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.review {
+    width: 25%; 
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
