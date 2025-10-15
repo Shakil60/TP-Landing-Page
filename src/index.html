@@ -1,67 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="assets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <header class = "main-header">
-        <div class = "leftheader">
-            <a id = "logo" href="#"><img src="assets/BalatroLogo.png" width = 200 height = "auto" alt="BalatroLogo"></a>
-        </div>
-        <h1>Site de Test</h1>
-        <nav>
-            <ul class = "rightheader">
-                <li><a href="#left-presentation" >Présentation</a></li>
-                <li><a href="#about-section">À propos</a></li>
-                <li><a href="#reviews-section">Avis</a></li>
-                <li><a href="#purchase-section">Acheter</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div id = "left-presentation">
-        </div>
-        <div id = "right-presentation">
-            <p>Accroche</p>
-        </div>
-        <div id = "about-section">
-            <h2>À propos de Balatro</h2>
-            <p>Balatro est un jeu de cartes roguelike où tu construis et améliores un deck de poker pour marquer un maximum de points. Chaque main que tu joues combine stratégie, hasard et bonus spéciaux obtenus grâce à des cartes Joker, des améliorations et des multiplicateurs. L’objectif : battre les “blinds” successifs et aller le plus loin possible avant d’être à court de jetons.</p>
-        </div>
-        <h2>Avis des utilisateurs</h2>
-        <div id="reviews-section">
+  <header class="main-header">
+    <a id="logo" href="#"><img src="assets/BalatroLogo.png" width="200" height="auto" alt="BalatroLogo"></a>
+    <nav>
+      <ul class="rightheader">
+        <li><a href="#presentation">Présentation</a></li>
+        <li><a href="#about-section">À propos</a></li>
+        <li><a href="#reviews-section">Avis</a></li>
+        <li><a href="#purchase-section">Acheter</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <div class="review">
-                <img src="assets/5etoiles.png" alt="5 Stars" width=150 height="auto">
-                <p>"Balatro est un jeu captivant qui combine stratégie et chance. J'adore la mécanique de construction de deck et les différentes façons de marquer des points."</p>
-            </div>
+  <main>
+    <section id="presentation">
+      <video autoplay muted loop id="bg-video">
+        <source src="assets/background.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    </section>
 
-            <div class="review">
-                <img src="assets/5etoiles.png" alt="5 Stars" width=150 height="auto">
-                <p>"J'adore la mécanique de construction de deck dans Balatro. C'est un défi constant d'optimiser son jeu tout en s'adaptant aux cartes que l'on reçoit. Un must pour les amateurs de jeux de cartes."</p>
-            </div>
+    <div id="about-section">
+      <h2>Présentation de Balatro</h2>
+      <p>Balatro est un jeu de cartes roguelike où tu construis et améliores un deck de poker pour marquer un maximum de points. Chaque main que tu joues combine stratégie, hasard et bonus spéciaux obtenus grâce à des cartes Joker, des améliorations et des multiplicateurs. L’objectif : battre les “blinds” successifs et aller le plus loin possible avant d’être à court de jetons.</p>
+    </div>
 
-            <div class="review">
-                <img src="assets/5etoiles.png" alt="5 Stars" width=150 height="auto">
-                <p>"Le design et l'interface de Balatro sont superbes. Le jeu est facile à prendre en main mais difficile à maîtriser, ce qui le rend très addictif. Je recommande vivement !"</p>
-            </div>
-        </div>
-        <h2>Acheter Balatro</h2>
-        <div id="purchase-section">
-            <a href="#"><img src="assets/SteamLogo.png" alt="Steam" width=100 height="auto"></a>
-            <a href="#"><img src="assets/EpicGamesLogo.png" alt="Epic Games" width=85 height="auto"></a>
-        </div>
-    </main>
-    <footer id = "main-footer">
-        <p>© 2024 MonSite. Tous droits réservés.</p>
-        <ul>
-            <li><a href="#">Politique de confidentialité</a></li>
-            <li><a href="#">Conditions d'utilisation</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul> 
-    </footer>
+    <h2 id="rating">Avis des utilisateurs</h2>
+    <div id="reviews-section">
+      <div class="review">
+        <img src="assets/5etoiles.png" alt="5 Stars" width="150" height="auto">
+        <p>"Balatro est un jeu captivant qui combine stratégie et chance. J'adore la mécanique de construction de deck et les différentes façons de marquer des points."</p>
+      </div>
+
+      <div class="review">
+        <img src="assets/5etoiles.png" alt="5 Stars" width="150" height="auto">
+        <p>"J'adore la mécanique de construction de deck dans Balatro. C'est un défi constant d'optimiser son jeu tout en s'adaptant aux cartes que l'on reçoit. Un must pour les amateurs de jeux de cartes."</p>
+      </div>
+
+      <div class="review">
+        <img src="assets/5etoiles.png" alt="5 Stars" width="150" height="auto">
+        <p>"Le design et l'interface de Balatro sont superbes. Le jeu est facile à prendre en main mais difficile à maîtriser, ce qui le rend très addictif. Je recommande vivement !"</p>
+      </div>
+    </div>
+
+    <h2 id="purchase">Acheter Balatro</h2>
+    <div id="purchase-section">
+      <a href="https://store.steampowered.com/app/2379780/Balatro/"><img src="assets/SteamLogo.png" alt="Steam" width="100" height="auto"></a>
+      <a href="https://www.nintendo.com/us/store/products/balatro-switch/"><img src="assets/SwitchLogo.png" alt="Epic Games" width="85" height="auto"></a>
+    </div>
+  </main>
+
+  <footer id="main-footer">
+    <p>© 2024 Balatro. Tous droits réservés.</p>
+    <ul>
+      <li><a href="#">Politique de confidentialité</a></li>
+      <li><a href="#">Conditions d'utilisation</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul> 
+  </footer>
 </body>
 </html>
